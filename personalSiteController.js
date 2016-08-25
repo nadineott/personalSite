@@ -8,10 +8,19 @@ angular.module('personalSite', [])
 
 .controller('personalSiteController', function($scope) {
   $scope.show = 1;
+  $scope.firstLoad = true;
 
   $scope.showHome = function(){
+    if ($scope.firstLoad){
+      $(".home").fadeIn(1000);
+      $scope.firstLoad = false;
+    } else {
+      $(".home").fadeIn(500);
+    }
     $scope.show = 1;
+
   }
+  $scope.showHome();
   $scope.showBlog = function(){
     $scope.show = 3;
     $(".blog").fadeIn(500);
