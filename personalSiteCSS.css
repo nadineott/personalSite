@@ -1,11 +1,13 @@
 body {
-  background-color: grey;
+  background-color: #d9d9d9;
 }
 
 .innerBox {
   background-color: #f2f2f2;
-  width: 95%;
-
+  width: 93%;
+  margin:0 auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
 .name, .softwareEngineer {
@@ -25,7 +27,13 @@ body {
    width: 40%;
    color: white;
    font-size: 2em;
-    text-shadow: .06em .06em black;
+   text-shadow: .06em .06em black;
+}
+
+.resume{
+  width: 50%;
+  margin-left: 25%;
+  marign-right: 25%;
 }
 
 /*NAVBAR STYLING*/
@@ -38,6 +46,7 @@ body {
   position: relative;
   display: inline-block;
   margin-right: -4px;
+  color: black;
 }
 
 .navBar a:link{
@@ -61,6 +70,14 @@ body {
   border: solid 1px transparent;
 }
 
+.navBar a:active {
+  box-shadow: 0px 3px 4px #aaa inset, 0px 2px 3px #fff;
+}
+
+.navBar a:visited {
+  color: black;
+}
+
 .navBar a:before {
   content: "";
   display: block;
@@ -76,16 +93,15 @@ body {
   box-shadow: inset 0px 8px 48px #ddd;
 }
 
-.navBar a:active {
-  color: blue;
-  background: red;
-}
-
 .navBar a:hover {
   text-decoration: none;
   color: #555;
   background: #f5f5f5;
 }
+
+/*.navBar a:active {
+  background-color: grey;
+}*/
 
 /*FADE INS*/
 

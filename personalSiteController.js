@@ -7,13 +7,10 @@ angular.module('personalSite', [])
 // show 5 = recent projects
 
 .controller('personalSiteController', function($scope) {
-  $scope.show = 7;
   $scope.show = 1;
-  $(".home").fadeIn(500);
 
   $scope.showHome = function(){
     $scope.show = 1;
-    // $(".home").fadeIn(200);
   }
   $scope.showBlog = function(){
     $scope.show = 3;
