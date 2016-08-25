@@ -1,24 +1,106 @@
 body {
   background-color:  #f2f2f2;
 }
-.mainPicture, .aboutMeText{
-  width: 105%;
-  position:fixed;
-  bottom:0px;
-}
 
 .name, .softwareEngineer {
   text-align: center;
 }
 
-.linksTable {
+/*.navBar {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.linksTable td {
+.navBar li {
   width: 15%;
+  text-align: center;
+  list-style: none;
+}*/
+
+.mainPicture {
+
+   position: relative;
+   width: 100%;
+   bottom: 0px;
+}
+
+.mainPictureText {
+   position: absolute;
+   top: 65%;
+   left: 55%;
+   width: 40%;
+   color: white;
+   font-size: 2em;
+    text-shadow: .06em .06em black;
+}
+
+/*NAVBAR STYLING*/
+.navBar {
+  list-style: none;
   text-align: center;
 }
 
+.navBar li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.navBar li:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.navBar a:link, .navBar a:visited {
+  display: block;
+  text-decoration: none;
+  background-color: #f7f7f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+  color: #a7a7a7;
+  margin: 36px;
+  width: 144px;
+  height: 144px;
+  position: relative;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+  border: solid 1px transparent;
+}
+
+.navBar a:before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 48px #ddd;
+}
+
+.navBar a:active {
+  background: red;
+  /*box-shadow: 0px 3px 4px #aaa inset, 0px 2px 3px #fff;*/
+}
+
+.navBar a:hover {
+  text-decoration: none;
+  color: #555;
+  background: #f5f5f5;

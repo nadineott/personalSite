@@ -5,44 +5,75 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   <script src="personalSiteController.js"></script>
 </head>
+
 <body>
   <div ng-app="personalSite">
   <div ng-controller = "personalSiteController">
-<h1 class = name>Nadine Ott</h1>
-<h3 class = softwareEngineer>Software Engineer</h3>
+  <h1 class = name>Nadine Ott</h1>
+  <h3 class = softwareEngineer>Software Engineer</h3>
 
-<table class = linksTable ng-show ="show==1">
-  <td>
-  <button>home</button>
-  </td>
-  <td>
-  <button>blog</button>
-  </td>
-  <td>
-  <button>resume</button>
-  </td>
-  <td>
-  <button>projects</button>
-  </td>
-</table>
 
+      <ul class="navBar">
+        <li ng-click = "showHome()">
+          <a href="#">
+            <span>Home</span>
+          </a>
+        </li>
+        <li ng-click = "showBlog()">
+          <a href="#">
+            <span>Blog</span>
+          </a>
+          </li>
+        <li  ng-click = "showResume()">
+            <a href="#">
+            <span>Resume</span>
+          </a>
+        </li>
+        <li  ng-click = "showProjects()">
+          <a href="#">
+            <span>Projects</span>
+          </a>
+        </li>
+    </ul>
+
+
+
+<!--
+  <ul class = "navBar">
+    <li>
+    <button ng-click = "showHome()">home</button>
+    </li>
+    <li>
+    <button ng-click = "showBlog()">blog</button>
+    </li>
+    <li>
+    <button ng-click = "showResume()">resume</button>
+    </li>
+    <li>
+    <button ng-click = "showProjects()">projects</button>
+    </li>
+  </ul> -->
+
+<div " ng-show ="show==1">
+  <img src = "http://i1379.photobucket.com/albums/ah144/NadineOtt/54bbf82c-2f50-4a20-be74-b35e5d77fe55_zpsvsyjezyl.jpg" class = "mainPicture">
+  <div class = "mainPictureText">
+  Lorem ipsum dolor sit amet, ea sit brute denique dissentiet, sit sale novum ex. Dico consulatu ne per, his te esse solum deterruisset. Vix aperiri quaeque pericula et, ne mea ullum simul. Eum novum nonumy consequuntur id, ei pro vitae persius quaeque, diam tollit et usu.
   </div>
+</div>
+  <div class = "blog" ng-show = "show==3">
+    BLOG
+  </div>
+
+  <div class = "resume" ng-show = "show==4">
+  RESUME
+  </div>
+
+  <div class = "recentProjects" ng-show = "show==5">
+  RECENT PROJECTS
   </div>
 
 
-
-<img class = mainPicture src = "http://i1379.photobucket.com/albums/ah144/NadineOtt/54bbf82c-2f50-4a20-be74-b35e5d77fe55_zpsvsyjezyl.jpg" ng-show ="show==2">
-
-<div class = blog ng-show = "show==3">
-</div>
-
-<div class = resume ng-show = "show==4">
-</div>
-
-<div class = blog ng-show = "show==5">
-</div>
-
-
-
+    </div>
+    </div>
 </body>
 </html>
