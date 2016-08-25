@@ -13,6 +13,7 @@ angular.module('personalSite', [])
   $scope.showHome = function(){
     console.log("showHome function called")
     $scope.show = 1;
+    $(".home").fadeIn(500);
   }
   $scope.showBlog = function(){
     console.log("showBlog function called")
