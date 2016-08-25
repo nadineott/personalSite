@@ -7,24 +7,24 @@ angular.module('personalSite', [])
 // show 5 = recent projects
 
 .controller('personalSiteController', function($scope) {
-  console.log("controller working");
+  $scope.show = 7;
   $scope.show = 1;
+  $(".home").fadeIn(500);
 
   $scope.showHome = function(){
-    console.log("showHome function called")
     $scope.show = 1;
-    $(".home").fadeIn(500);
+    // $(".home").fadeIn(200);
   }
   $scope.showBlog = function(){
-    console.log("showBlog function called")
     $scope.show = 3;
+    $(".blog").fadeIn(500);
   }
   $scope.showResume = function(){
-    console.log("showResume function called")
     $scope.show = 4;
+    $(".resume").fadeIn(500);
   }
   $scope.showProjects = function(){
-    console.log("showProjects function called")
     $scope.show = 5;
+    $(".projects").fadeIn(500);
   }
 });
