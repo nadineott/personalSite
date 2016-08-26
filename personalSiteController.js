@@ -18,7 +18,6 @@ angular.module('personalSite', [])
       $(".home").fadeIn(500);
     }
     $scope.show = 1;
-
   }
   $scope.showHome();
   $scope.showBlog = function(){
