@@ -72,6 +72,10 @@ body {
   marign-right: 25%;
 }
 
+.load {
+  text-align: center;
+}
+
 /*NAVBAR STYLING*/
 .navBar {
   text-align: center;
@@ -164,6 +168,13 @@ animation-duration: 1s;
 animation-name: fadeInDown;
 }
 
+.fadeOutDown {
+-webkit-animation-name: fadeOutDown;
+-moz-animation-name: fadeOutDown;
+-o-animation-name: fadeOutDown;
+animation-name: fadeOutDown;
+}
+
 .delay {
 -webkit-animation-delay: 0.30s;
 -moz-animation-delay: 0.30s;
@@ -203,7 +214,7 @@ animation-delay: 0.7s;
 -webkit-animation-delay: 0.60s;
 -moz-animation-delay: 0.60s;
 -o-animation-delay: 0.60s;
-animation-delay: 0.80s;
+animation-delay: 2s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -216,4 +227,16 @@ opacity: 0;
 opacity: 1;
 -webkit-transform: translateY(0);
 }
+}
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 }
