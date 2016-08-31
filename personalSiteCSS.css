@@ -41,7 +41,7 @@ body {
    text-shadow: .06em .06em black;
 }
 
-.projectTitle {
+.title {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
@@ -74,6 +74,20 @@ body {
 
 .load {
   text-align: center;
+}
+
+.entry {
+  background-color: #e6e6e6;
+  width: 60%;
+  margin-top: 2m;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogText {
+  font-size: 1em;
+  padding: 1em;
 }
 
 /*NAVBAR STYLING*/
@@ -142,9 +156,6 @@ body {
 .navBar li:target a{
   background: #d9d9d9;
 }
-/*.navBar a:active {
-  background-color: grey;
-}*/
 
 /*FADE INS*/
 
