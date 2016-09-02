@@ -19,6 +19,11 @@ angular.module('personalSite', [])
     }
     $scope.show = 1;
   }
+
+  $scope.showAll = function(){
+
+  }
+
   $scope.showHome();
   $scope.showBlog = function(){
     $scope.show = 3;
