@@ -145,6 +145,7 @@ body {
   z-index: -1;
   border-radius: 50%;
   box-shadow: inset 0px 8px 48px #ddd;
+  color: black;
 }
 
 .navBar a:hover {
